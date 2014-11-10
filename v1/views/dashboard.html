@@ -75,52 +75,64 @@
         </div>
     </div>
 
-    <div class="row" data-ng-controller="chartCtrl">
-        
-        <div class="col-lg-3 col-xsm-6">
-            <div class="panel panel-default">
-                <div class="panel-body text-center">
-                    <div easypiechart options="easypiechartsm1.options" percent="easypiechartsm1.percent" class="easypiechart easypiechart-sm">
-                        <span class="pie-percent" ng-bind="easypiechartsm1.percent"></span>
-                    </div>
-                    <p class="text-center text-muted">Bounce Rate</p>
-                </div>
-            </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Project</th>
+                        <th>Status</th>
+                        <th>Manager</th>
+                        <th>Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><span class="color-success"><i class="fa fa-level-up"></i></span> TWLT</td>
+                        <td><span class="label label-info">Pending</span></td>
+                        <td>Amery Lee</td>
+                        <td><progressbar class="progressbar-xs no-margin" value="55"></progressbar></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><span class="color-success"><i class="fa fa-level-up"></i></span> A16Z</td>
+                        <td><span class="label label-primary">Due</span></td>
+                        <td>Romayne Carlyn</td>
+                        <td><progressbar class="progressbar-xs no-margin" value="34" type="success"></progressbar></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><span class="color-warning"><i class="fa fa-level-down"></i></span> DARK</td>
+                        <td><span class="label label-success">Due</span></td>
+                        <td>Marybeth Joanna</td>
+                        <td><progressbar class="progressbar-xs no-margin" value="68" type="info"></progressbar></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><span class="color-info"><i class="fa fa-level-up"></i></span> Q300</td>
+                        <td><span class="label label-danger">Blocked</span></td>
+                        <td>Jonah Benny</td>
+                        <td><progressbar class="progressbar-xs no-margin" value="52" type="warning"></progressbar></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span class="color-danger"><i class="fa fa-level-down"></i></span> RVNG</td>
+                        <td><span class="label label-warning">Suspended</span></td>
+                        <td>Daly Royle</td>
+                        <td><progressbar class="progressbar-xs no-margin" value="77" type="danger"></progressbar></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><span class="color-info"><i class="fa fa-level-down"></i></span> FDSA</td>
+                        <td><span class="label label-info">Suspended</span></td>
+                        <td>Jane Swift</td>
+                        <td><progressbar class="progressbar-xs no-margin" value="55" type="success"></progressbar></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        <div class="col-lg-3 col-xsm-6">
-            <div class="panel panel-default">
-                <div class="panel-body text-center">
-                    <div easypiechart options="easypiechartsm2.options" percent="easypiechartsm2.percent" class="easypiechart easypiechart-sm">
-                        <span class="pie-percent" ng-bind="easypiechartsm2.percent"></span>
-                    </div>
-                    <p class="text-center text-muted">New Visists</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-xsm-6">
-            <div class="panel panel-default">
-                <div class="panel-body text-center">
-                    <div easypiechart options="easypiechartsm3.options" percent="easypiechartsm3.percent" class="easypiechart easypiechart-sm">
-                        <span class="pie-percent" ng-bind="easypiechartsm3.percent"></span>
-                    </div>
-                    <p class="text-center text-muted">Search Traffic</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-xsm-6">
-            <div class="panel panel-default">
-                <div class="panel-body text-center">
-                    <div easypiechart options="easypiechartsm4.options" percent="easypiechartsm4.percent" class="easypiechart easypiechart-sm">
-                        <span class="pie-percent" ng-bind="easypiechartsm4.percent"></span>
-                    </div>
-                    <p class="text-center text-muted">Modern Browsers</p>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 
